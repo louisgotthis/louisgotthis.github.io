@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Louis — It starts there</title>
+
+  <!-- Google Font: Great Vibes (script-style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    /* global */
+    :root{
+      --bg:#000000;   /* czarne tlo */
+      --text:#ffffff; /* biala czcionka */
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* kontener centra */
+    .wrap{
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px;
+      box-sizing:border-box;
+    }
+
+    .card{
+      text-align:center;
+      max-width:900px;
+      width:100%;
+      padding:40px 20px;
+    }
+
+    /* Nagłówek "Louis" — używa fontu script (Great Vibes) */
+    h1.title{
+      margin:0;
+      font-family: "Great Vibes", "Brush Script MT", cursive;
+      font-size: clamp(2.8rem, 8vw, 6.5rem); /* responsywna wielkość */
+      letter-spacing: -1px;
+      line-height:1;
+      color:var(--text);
+    }
+
+    /* Podtytuł w Times New Roman */
+    p.subtitle{
+      margin:18px 0 0 0;
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(1rem, 2.2vw, 1.5rem);
+      opacity:0.95;
+    }
+
+    /* opcjonalne: mały pasek dolny */
+    footer.note{
+      margin-top:26px;
+      font-size:0.85rem;
+      opacity:0.6;
+    }
+
+    /* drobne dopasowania dla małych ekranów */
+    @media (max-width:420px){
+      .card{ padding:28px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1 class="title">Louis</h1>
+      <p class="subtitle">It starts there</p>
+      <footer class="note">Strona statyczna — zapisz plik jako <code>index.html</code> i otwórz w przeglądarce.</footer>
+    </div>
+  </div>
+</body>
+</html>
