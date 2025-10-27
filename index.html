@@ -66,18 +66,37 @@
       opacity:0.6;
     }
 
+    /* Tekst w lewym rogu */
+    .left-text {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      max-width: 300px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      opacity: 0.9;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+    }
+
     /* drobne dopasowania dla małych ekranów */
     @media (max-width:420px){
       .card{ padding:28px 12px; }
+      .left-text { max-width: 200px; font-size: 0.85rem; }
     }
   </style>
 </head>
 <body>
+  <!-- Tekst w lewym rogu -->
+  <div class="left-text">
+    Otwórz się na wiedzę i nowe możliwości, zrób ten jeden krok do przodu i zacznij zarabiać pieniądze jak chcesz, gdzie chcesz i kiedy chcesz. Dzisiaj się uczysz, a jutro dostajesz pierwszy przelew, nie od razu Rzym zbudowano.
+  </div>
+
   <div class="wrap">
     <div class="card">
       <h1 class="title">Louis</h1>
       <p class="subtitle">It starts there</p>
-      <footer class="note">Strona statyczna — zapisz plik jako <code>index.html</code> i otwórz w przeglądarce.</footer>
+      <footer class="note">Learn how to hustle or stay broke.</footer>
     </div>
   </div>
 </body>
