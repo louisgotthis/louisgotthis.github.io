@@ -32,6 +32,7 @@
       justify-content:center;
       padding:40px;
       box-sizing:border-box;
+      flex-direction: column;
     }
 
     .card{
@@ -66,37 +67,34 @@
       opacity:0.6;
     }
 
-    /* Tekst w lewym rogu */
+    /* Tekst po lewej stronie pod głównym contentem */
     .left-text {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      max-width: 300px;
-      font-size: 0.95rem;
-      line-height: 1.4;
-      opacity: 0.9;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin-top: 20px; /* odstęp od stopki */
+      text-align: left;
+      max-width: 600px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0.95;
       color: var(--text);
     }
 
     /* drobne dopasowania dla małych ekranów */
     @media (max-width:420px){
       .card{ padding:28px 12px; }
-      .left-text { max-width: 200px; font-size: 0.85rem; }
+      .left-text { max-width: 100%; font-size: 0.9rem; }
     }
   </style>
 </head>
 <body>
-  <!-- Tekst w lewym rogu -->
-  <div class="left-text">
-    Otwórz się na wiedzę i nowe możliwości, zrób ten jeden krok do przodu i zacznij zarabiać pieniądze jak chcesz, gdzie chcesz i kiedy chcesz. Dzisiaj się uczysz, a jutro dostajesz pierwszy przelew, nie od razu Rzym zbudowano.
-  </div>
-
   <div class="wrap">
     <div class="card">
       <h1 class="title">Louis</h1>
       <p class="subtitle">It starts there</p>
       <footer class="note">Learn how to hustle or stay broke.</footer>
+      <div class="left-text">
+        Otwórz się na wiedzę i nowe możliwości, zrób ten jeden krok do przodu i zacznij zarabiać pieniądze jak chcesz, gdzie chcesz i kiedy chcesz. Dzisiaj się uczysz, a jutro dostajesz pierwszy przelew, nie od razu Rzym zbudowano.
+      </div>
     </div>
   </div>
 </body>
